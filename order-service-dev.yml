@@ -15,5 +15,7 @@ spring:
       discovery:
         enabled: true
         register: true
+        health-check-path: /actuator/health
+        health-check-interval: 10s
 server:
   port: 8082
