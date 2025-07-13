@@ -35,3 +35,12 @@ springdoc:
     path: /swagger-ui.html
   api-docs:
     path: /v3/api-docs
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: full
+
+customer:
+  service:
+    url: http://localhost:8282
