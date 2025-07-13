@@ -43,4 +43,4 @@ feign:
 
 customer:
   service:
-    url: http://localhost:8081
+    url: http://customer-service:8081
