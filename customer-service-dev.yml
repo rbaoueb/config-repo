@@ -8,8 +8,6 @@ spring:
 
     properties:
       schema.registry.url: http://schema-registry:8081
-      # facultatif : sujet d'enregistrement automatique
-      specific.avro.reader: true
   liquibase:
     enabled: true
     change-log: classpath:db/changelog/db.changelog-master.xml
