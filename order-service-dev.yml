@@ -1,4 +1,13 @@
 spring:
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      group-id: order-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      properties:
+        schema.registry.url: http://schema-registry:8081
+        specific.avro.reader: true
   liquibase:
     enabled: true
     change-log: classpath:db/changelog/db.changelog-master.xml
