@@ -1,13 +1,13 @@
 spring:
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: kafka:9092
 
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
 
     properties:
-      schema.registry.url: http://localhost:8090
+      schema.registry.url: http://schema-registry:8090
       # facultatif : sujet d'enregistrement automatique
       specific.avro.reader: true
   liquibase:
