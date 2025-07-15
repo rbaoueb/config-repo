@@ -7,9 +7,7 @@ spring:
       value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
 
     properties:
-      schema.registry.url: http://localhost:8090
-      # facultatif : sujet d'enregistrement automatique
-      specific.avro.reader: true
+      schema.registry.url: http://localhost:8081
   liquibase:
     enabled: true
     change-log: classpath:db/changelog/db.changelog-master.xml
