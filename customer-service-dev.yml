@@ -1,4 +1,10 @@
 spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:9090/auth/realms/myrealm
   kafka:
     bootstrap-servers: kafka:9092
 
@@ -48,3 +54,10 @@ app:
   kafka:
     customer:
       topic: customer-events
+keycloak:
+  realm: myrealm
+  auth-server-url: http://localhost:9090/auth
+  resource: customer-service
+  credentials:
+    secret: I8MfLnNLtSrlMjWiZEhJekGx2zzZvt24
+  bearer-only: true
