@@ -30,7 +30,7 @@ spring:
         health-check-path: /actuator/health
         health-check-interval: 10s
 server:
-  port: 8083
+  port: 8383
 management:
   endpoints:
     web:
