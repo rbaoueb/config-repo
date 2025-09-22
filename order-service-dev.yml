@@ -6,7 +6,7 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
       properties:
-        schema.registry.url: http://schema-registry:8081
+        schema.registry.url: http://schema-registry:8090
         specific.avro.reader: true
   liquibase:
     enabled: true
