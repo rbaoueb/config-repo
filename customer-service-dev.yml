@@ -65,6 +65,6 @@ camunda:
   client:
     mode: simple
     zeebe:
-      gateway-address: zeebe:26500
+      gateway-address: 127.0.0.1:26500
       security:
         plaintext: true
