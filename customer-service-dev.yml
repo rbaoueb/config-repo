@@ -61,9 +61,10 @@ keycloak:
   credentials:
     secret: I8MfLnNLtSrlMjWiZEhJekGx2zzZvt24
   bearer-only: true
-zeebe:
+camunda:
   client:
-    broker:
-      gateway-address: zeebe:26500  # adresse du gateway Zeebe
-    security:
-      plaintext: true
+    mode: rest # ou grpc
+    zeebe:
+      gateway-address: zeebe:26500
+      security:
+        plaintext: true
