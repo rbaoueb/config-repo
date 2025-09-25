@@ -63,7 +63,7 @@ keycloak:
   bearer-only: true
 camunda:
   client:
-    mode: selfManaged
+    mode: simple
     zeebe:
       gateway-address: zeebe:26500
       security:
