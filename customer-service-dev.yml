@@ -61,3 +61,9 @@ keycloak:
   credentials:
     secret: I8MfLnNLtSrlMjWiZEhJekGx2zzZvt24
   bearer-only: true
+zeebe:
+  client:
+    broker:
+      gateway-address: zeebe:26500  # adresse du gateway Zeebe
+    security:
+      plaintext: true
