@@ -63,7 +63,7 @@ keycloak:
   bearer-only: true
 camunda:
   client:
-    mode: grpc # ou rest
+    mode: selfManaged
     zeebe:
       gateway-address: zeebe:26500
       security:
