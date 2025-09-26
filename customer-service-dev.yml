@@ -50,7 +50,7 @@ app:
       topic: customer-events
 kie:
   server:
-    url: http://kie-server:8080/kie-server/services/rest/server
+    url: http://localhost:8080/kie-server/services/rest/server
     user: kieserver
     pwd: kieserver1!
     container-id: customer-rules_1.0.0-SNAPSHOT
