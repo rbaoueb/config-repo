@@ -48,3 +48,10 @@ app:
   kafka:
     customer:
       topic: customer-events
+kie:
+  server:
+    url: http://kie-server:3367/kie-server/services/rest/server
+    user: kieserver
+    pwd: kieserver1!
+    container-id: customer-rules_1.0.0-SNAPSHOT
+    session-name: defaultKieSession
