@@ -68,3 +68,10 @@ camunda:
       gateway-address: 127.0.0.1:26500
       security:
         plaintext: true
+kie:
+  server:
+    url: http://kie-server:8080/kie-server/services/rest/server
+    user: kieserver
+    pwd: kieserver1!
+    container-id: customer-rules_1.0.0-SNAPSHOT
+    session-name: defaultKieSession
