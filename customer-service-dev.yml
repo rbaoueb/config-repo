@@ -73,5 +73,6 @@ kie:
     url: http://kie-server:8080/kie-server/services/rest/server
     user: kieserver
     pwd: kieserver1!
-    container-id: customer_service_1.0.0-SNAPSHOT
+    customer-container-id: customer_service_1.0.0-SNAPSHOT
+    order-container-id: customer_service_1.0.0-SNAPSHOT
     session-name: defaultKieSession
